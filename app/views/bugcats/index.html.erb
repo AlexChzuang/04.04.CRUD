@@ -1,0 +1,24 @@
+<h1>貓貓蟲們</h1>
+
+<%= link_to "新貓貓蟲", new_bugcat_path %>
+
+<table>
+  <thead>
+    <tr>
+      <td>貓貓蟲姓名</td>
+      <td>參加政黨</td>
+      <td>政見發表</td>
+      <td>得票數</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bugcats.each do |bugcats| %>
+    <tr>
+      <td><%= bugcat.name %>(年齡：<%= bugcat.age %> 歲)</td>
+      <td><%= bugcat.party %></td>
+      <td><%= bugcat.politics %></td>
+      <td><%= bugcat.votes %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

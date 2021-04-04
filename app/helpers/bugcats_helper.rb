@@ -1,0 +1,2 @@
+module BugcatsHelper
+end

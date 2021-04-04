@@ -1,0 +1,2 @@
+class Bugcat < ApplicationRecord
+end
